@@ -1,10 +1,14 @@
 <template>
-  <Hero-file />
+  <div class="container">
+    <Hero-file />
+    <Large-Card-Display />
+    <Large-Card-Display />
+  </div>
 </template>
 
 <script>
-
-export default {
-
-}
+export default {}
 </script>
+<style scoped>
+
+</style>
