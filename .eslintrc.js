@@ -15,5 +15,8 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {'vue/multi-word-component-names': 'off'}
+  rules: {'vue/multi-word-component-names': 'off', 
+  indent: [2, "tab"],
+  "no-tabs": 0,
+  }
 }

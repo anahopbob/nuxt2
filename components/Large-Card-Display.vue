@@ -1,16 +1,20 @@
 <template>
     <div class="container">
         <h4 class="header">
-            Top-Rated
+            {{ cardsSection.title }}
         </h4>
         <p class="snippet">
-            Nest
+            {{ cardsSection.snippet }}
         </p>
+        <div class="cards-container">
+
+        </div>
     </div>
 </template>
 
 <script>
 export default {
+  props: ['cardsSection']
 }
 </script>
 
