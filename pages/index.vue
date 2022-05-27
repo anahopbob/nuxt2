@@ -1,4 +1,7 @@
 <template>
+  <div>
+  <Nav-Bar />>
+
   <div class="container">
     <Hero-file />
     <Large-Card-Display
@@ -6,18 +9,25 @@
       :key="cardInfo.id"
       :cardsSection="cardInfo"
     />
+    <Small-Card-Display
+      v-for="cardInfo in smallCardSections"
+      :key="cardInfo.id"
+      :cardsSection="cardInfo"
+    />
+  </div>
   </div>
 </template>
 
 <script>
-import { largeCardSections } from "@/assets/data.js";
+import { largeCardSections, smallCardSections } from "@/assets/data.js"
 export default {
   data() {
     return {
-      largeCardInfo: largeCardSections,
-    };
-  },
-};
+      largeCardInfo: largeCardSections, 
+      smallCardSections
+    }
+  }
+}
 </script>
 <style scoped>
 </style>
