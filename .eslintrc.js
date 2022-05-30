@@ -23,6 +23,7 @@ module.exports = {
     quotes: [0, "double"],
     "skipBlankLines": 0,
     "space-before-function-paren": ["error", "never"],
-    "object-shorthand": ["error", "always", { "avoidQuotes": true }]
+    "object-shorthand": ["error", "never"],
+    "object-shorthand": 0
   }
 }

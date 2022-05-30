@@ -1,7 +1,5 @@
 <template>
   <div>
-  <Nav-Bar />>
-
   <div class="container">
     <Hero-file />
     <Large-Card-Display
@@ -23,7 +21,7 @@ import { largeCardSections, smallCardSections } from "@/assets/data.js"
 export default {
   data() {
     return {
-      largeCardInfo: largeCardSections, 
+      largeCardInfo: largeCardSections,
       smallCardSections
     }
   }
